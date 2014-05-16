@@ -41,23 +41,23 @@
 			remoteGlobalIDString = A06BE40519234DBD004AF81D;
 			remoteInfo = "StudySocialApp-iOS";
 		};
-		D19B51CE1926115D00D0CDA3 /* PBXContainerItemProxy */ = {
+		D19B5247192614FE00D0CDA3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D19B51C71926115D00D0CDA3 /* SDWebImage.xcodeproj */;
+			containerPortal = D19B5240192614FD00D0CDA3 /* SDWebImage.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 53761325155AD0D5005750A4;
 			remoteInfo = SDWebImage;
 		};
-		D19B51D01926115D00D0CDA3 /* PBXContainerItemProxy */ = {
+		D19B5249192614FE00D0CDA3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D19B51C71926115D00D0CDA3 /* SDWebImage.xcodeproj */;
+			containerPortal = D19B5240192614FD00D0CDA3 /* SDWebImage.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 537D95C117ECC1FE0097C263;
 			remoteInfo = "SDWebImage+WebP";
 		};
-		D19B51D21926115D00D0CDA3 /* PBXContainerItemProxy */ = {
+		D19B524B192614FE00D0CDA3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D19B51C71926115D00D0CDA3 /* SDWebImage.xcodeproj */;
+			containerPortal = D19B5240192614FD00D0CDA3 /* SDWebImage.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 531041E0157EAFA400BBABC3;
 			remoteInfo = "SDWebImage+MKAnnotation";
@@ -98,7 +98,7 @@
 		D16BF3B319235F8E0098CE35 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		D16BF3B5192363AD0098CE35 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		D1915784192601B60037855A /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
-		D19B51C71926115D00D0CDA3 /* SDWebImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage.xcodeproj; path = "../../../SDWebImage-master/SDWebImage.xcodeproj"; sourceTree = "<group>"; };
+		D19B5240192614FD00D0CDA3 /* SDWebImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage.xcodeproj; path = "../../../StudySocialApp-iOS/SDWebImage-master/SDWebImage.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +131,7 @@
 		A06BE3FD19234DBD004AF81D = {
 			isa = PBXGroup;
 			children = (
-				D19B51C71926115D00D0CDA3 /* SDWebImage.xcodeproj */,
+				D19B5240192614FD00D0CDA3 /* SDWebImage.xcodeproj */,
 				A06BE40F19234DBD004AF81D /* StudySocialApp-iOS */,
 				A06BE42E19234DBD004AF81D /* StudySocialApp-iOSTests */,
 				A06BE40819234DBD004AF81D /* Frameworks */,
@@ -224,12 +224,12 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
-		D19B51C81926115D00D0CDA3 /* Products */ = {
+		D19B5241192614FD00D0CDA3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D19B51CF1926115D00D0CDA3 /* libSDWebImage.a */,
-				D19B51D11926115D00D0CDA3 /* libSDWebImage+WebP.a */,
-				D19B51D31926115D00D0CDA3 /* libSDWebImage+MKAnnotation.a */,
+				D19B5248192614FE00D0CDA3 /* libSDWebImage.a */,
+				D19B524A192614FE00D0CDA3 /* libSDWebImage+WebP.a */,
+				D19B524C192614FE00D0CDA3 /* libSDWebImage+MKAnnotation.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -299,8 +299,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = D19B51C81926115D00D0CDA3 /* Products */;
-					ProjectRef = D19B51C71926115D00D0CDA3 /* SDWebImage.xcodeproj */;
+					ProductGroup = D19B5241192614FD00D0CDA3 /* Products */;
+					ProjectRef = D19B5240192614FD00D0CDA3 /* SDWebImage.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -312,25 +312,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		D19B51CF1926115D00D0CDA3 /* libSDWebImage.a */ = {
+		D19B5248192614FE00D0CDA3 /* libSDWebImage.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libSDWebImage.a;
-			remoteRef = D19B51CE1926115D00D0CDA3 /* PBXContainerItemProxy */;
+			remoteRef = D19B5247192614FE00D0CDA3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D19B51D11926115D00D0CDA3 /* libSDWebImage+WebP.a */ = {
+		D19B524A192614FE00D0CDA3 /* libSDWebImage+WebP.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libSDWebImage+WebP.a";
-			remoteRef = D19B51D01926115D00D0CDA3 /* PBXContainerItemProxy */;
+			remoteRef = D19B5249192614FE00D0CDA3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D19B51D31926115D00D0CDA3 /* libSDWebImage+MKAnnotation.a */ = {
+		D19B524C192614FE00D0CDA3 /* libSDWebImage+MKAnnotation.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libSDWebImage+MKAnnotation.a";
-			remoteRef = D19B51D21926115D00D0CDA3 /* PBXContainerItemProxy */;
+			remoteRef = D19B524B192614FE00D0CDA3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
