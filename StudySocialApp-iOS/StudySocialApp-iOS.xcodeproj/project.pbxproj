@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A06BE40A19234DBD004AF81D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06BE40919234DBD004AF81D /* Foundation.framework */; };
+		A06BE40C19234DBD004AF81D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06BE40B19234DBD004AF81D /* CoreGraphics.framework */; };
+		A06BE40E19234DBD004AF81D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06BE40D19234DBD004AF81D /* UIKit.framework */; };
+		A06BE41419234DBD004AF81D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A06BE41219234DBD004AF81D /* InfoPlist.strings */; };
+		A06BE41619234DBD004AF81D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A06BE41519234DBD004AF81D /* main.m */; };
+		A06BE41A19234DBD004AF81D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A06BE41919234DBD004AF81D /* AppDelegate.m */; };
+		A06BE41D19234DBD004AF81D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A06BE41B19234DBD004AF81D /* Main.storyboard */; };
+		A06BE42219234DBD004AF81D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A06BE42119234DBD004AF81D /* Images.xcassets */; };
+		A06BE42919234DBD004AF81D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06BE42819234DBD004AF81D /* XCTest.framework */; };
+		A06BE42A19234DBD004AF81D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06BE40919234DBD004AF81D /* Foundation.framework */; };
+		A06BE42B19234DBD004AF81D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06BE40D19234DBD004AF81D /* UIKit.framework */; };
+		A06BE43319234DBD004AF81D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A06BE43119234DBD004AF81D /* InfoPlist.strings */; };
+		A06BE43519234DBD004AF81D /* StudySocialApp_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A06BE43419234DBD004AF81D /* StudySocialApp_iOSTests.m */; };
+		D11F3CE11924CB920071108B /* TwitterAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = D11F3CE01924CB920071108B /* TwitterAccount.m */; };
+		D11F3CE41924CBAD0071108B /* TwitterTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = D11F3CE31924CBAD0071108B /* TwitterTimeline.m */; };
+		D1364DCB192608E4002FA001 /* FeedsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1364DC6192608E4002FA001 /* FeedsViewController.m */; };
+		D1364DCC192608E4002FA001 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1364DC8192608E4002FA001 /* MainViewController.m */; };
+		D1364DCD192608E4002FA001 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1364DCA192608E4002FA001 /* SettingsViewController.m */; };
+		D1364DD119260919002FA001 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = D1364DCE19260919002FA001 /* add.png */; };
+		D1364DD219260919002FA001 /* feed.png in Resources */ = {isa = PBXBuildFile; fileRef = D1364DCF19260919002FA001 /* feed.png */; };
+		D1364DD319260919002FA001 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = D1364DD019260919002FA001 /* settings.png */; };
+		D16BF3B419235F8E0098CE35 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D16BF3B319235F8E0098CE35 /* Social.framework */; };
+		D16BF3B6192363AD0098CE35 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D16BF3B5192363AD0098CE35 /* Accounts.framework */; };
+		D1915785192601B60037855A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1915784192601B60037855A /* ImageIO.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A06BE42C19234DBD004AF81D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A06BE3FE19234DBD004AF81D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A06BE40519234DBD004AF81D;
+			remoteInfo = "StudySocialApp-iOS";
+		};
+		D19B51CE1926115D00D0CDA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D19B51C71926115D00D0CDA3 /* SDWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 53761325155AD0D5005750A4;
+			remoteInfo = SDWebImage;
+		};
+		D19B51D01926115D00D0CDA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D19B51C71926115D00D0CDA3 /* SDWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 537D95C117ECC1FE0097C263;
+			remoteInfo = "SDWebImage+WebP";
+		};
+		D19B51D21926115D00D0CDA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D19B51C71926115D00D0CDA3 /* SDWebImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 531041E0157EAFA400BBABC3;
+			remoteInfo = "SDWebImage+MKAnnotation";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A06BE40619234DBD004AF81D /* StudySocialApp-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StudySocialApp-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A06BE40919234DBD004AF81D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A06BE40B19234DBD004AF81D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A06BE40D19234DBD004AF81D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A06BE41119234DBD004AF81D /* StudySocialApp-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StudySocialApp-iOS-Info.plist"; sourceTree = "<group>"; };
+		A06BE41319234DBD004AF81D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A06BE41519234DBD004AF81D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A06BE41719234DBD004AF81D /* StudySocialApp-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StudySocialApp-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		A06BE41819234DBD004AF81D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A06BE41919234DBD004AF81D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A06BE41C19234DBD004AF81D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A06BE42119234DBD004AF81D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A06BE42719234DBD004AF81D /* StudySocialApp-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StudySocialApp-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A06BE42819234DBD004AF81D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A06BE43019234DBD004AF81D /* StudySocialApp-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StudySocialApp-iOSTests-Info.plist"; sourceTree = "<group>"; };
+		A06BE43219234DBD004AF81D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A06BE43419234DBD004AF81D /* StudySocialApp_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudySocialApp_iOSTests.m; sourceTree = "<group>"; };
+		D11F3CDF1924CB920071108B /* TwitterAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterAccount.h; sourceTree = "<group>"; };
+		D11F3CE01924CB920071108B /* TwitterAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterAccount.m; sourceTree = "<group>"; };
+		D11F3CE21924CBAD0071108B /* TwitterTimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterTimeline.h; sourceTree = "<group>"; };
+		D11F3CE31924CBAD0071108B /* TwitterTimeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterTimeline.m; sourceTree = "<group>"; };
+		D1364DC5192608E4002FA001 /* FeedsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedsViewController.h; sourceTree = "<group>"; };
+		D1364DC6192608E4002FA001 /* FeedsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedsViewController.m; sourceTree = "<group>"; };
+		D1364DC7192608E4002FA001 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		D1364DC8192608E4002FA001 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		D1364DC9192608E4002FA001 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		D1364DCA192608E4002FA001 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		D1364DCE19260919002FA001 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		D1364DCF19260919002FA001 /* feed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feed.png; sourceTree = "<group>"; };
+		D1364DD019260919002FA001 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		D16BF3B319235F8E0098CE35 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		D16BF3B5192363AD0098CE35 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		D1915784192601B60037855A /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		D19B51C71926115D00D0CDA3 /* SDWebImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDWebImage.xcodeproj; path = "../../../SDWebImage-master/SDWebImage.xcodeproj"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A06BE40319234DBD004AF81D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1915785192601B60037855A /* ImageIO.framework in Frameworks */,
+				D16BF3B6192363AD0098CE35 /* Accounts.framework in Frameworks */,
+				D16BF3B419235F8E0098CE35 /* Social.framework in Frameworks */,
+				A06BE40C19234DBD004AF81D /* CoreGraphics.framework in Frameworks */,
+				A06BE40E19234DBD004AF81D /* UIKit.framework in Frameworks */,
+				A06BE40A19234DBD004AF81D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A06BE42419234DBD004AF81D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A06BE42919234DBD004AF81D /* XCTest.framework in Frameworks */,
+				A06BE42B19234DBD004AF81D /* UIKit.framework in Frameworks */,
+				A06BE42A19234DBD004AF81D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A06BE3FD19234DBD004AF81D = {
+			isa = PBXGroup;
+			children = (
+				D19B51C71926115D00D0CDA3 /* SDWebImage.xcodeproj */,
+				A06BE40F19234DBD004AF81D /* StudySocialApp-iOS */,
+				A06BE42E19234DBD004AF81D /* StudySocialApp-iOSTests */,
+				A06BE40819234DBD004AF81D /* Frameworks */,
+				A06BE40719234DBD004AF81D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A06BE40719234DBD004AF81D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A06BE40619234DBD004AF81D /* StudySocialApp-iOS.app */,
+				A06BE42719234DBD004AF81D /* StudySocialApp-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A06BE40819234DBD004AF81D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1915784192601B60037855A /* ImageIO.framework */,
+				D16BF3B5192363AD0098CE35 /* Accounts.framework */,
+				D16BF3B319235F8E0098CE35 /* Social.framework */,
+				A06BE40919234DBD004AF81D /* Foundation.framework */,
+				A06BE40B19234DBD004AF81D /* CoreGraphics.framework */,
+				A06BE40D19234DBD004AF81D /* UIKit.framework */,
+				A06BE42819234DBD004AF81D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A06BE40F19234DBD004AF81D /* StudySocialApp-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A06BE41819234DBD004AF81D /* AppDelegate.h */,
+				A06BE41919234DBD004AF81D /* AppDelegate.m */,
+				A06BE41B19234DBD004AF81D /* Main.storyboard */,
+				D1364DC5192608E4002FA001 /* FeedsViewController.h */,
+				D1364DC6192608E4002FA001 /* FeedsViewController.m */,
+				D1364DC7192608E4002FA001 /* MainViewController.h */,
+				D1364DC8192608E4002FA001 /* MainViewController.m */,
+				D1364DC9192608E4002FA001 /* SettingsViewController.h */,
+				D1364DCA192608E4002FA001 /* SettingsViewController.m */,
+				A06BE42119234DBD004AF81D /* Images.xcassets */,
+				D11F3CDE1924CAE50071108B /* Models */,
+				A06BE41019234DBD004AF81D /* Supporting Files */,
+			);
+			path = "StudySocialApp-iOS";
+			sourceTree = "<group>";
+		};
+		A06BE41019234DBD004AF81D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D1364DCE19260919002FA001 /* add.png */,
+				D1364DCF19260919002FA001 /* feed.png */,
+				D1364DD019260919002FA001 /* settings.png */,
+				A06BE41119234DBD004AF81D /* StudySocialApp-iOS-Info.plist */,
+				A06BE41219234DBD004AF81D /* InfoPlist.strings */,
+				A06BE41519234DBD004AF81D /* main.m */,
+				A06BE41719234DBD004AF81D /* StudySocialApp-iOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A06BE42E19234DBD004AF81D /* StudySocialApp-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				A06BE43419234DBD004AF81D /* StudySocialApp_iOSTests.m */,
+				A06BE42F19234DBD004AF81D /* Supporting Files */,
+			);
+			path = "StudySocialApp-iOSTests";
+			sourceTree = "<group>";
+		};
+		A06BE42F19234DBD004AF81D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A06BE43019234DBD004AF81D /* StudySocialApp-iOSTests-Info.plist */,
+				A06BE43119234DBD004AF81D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D11F3CDE1924CAE50071108B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D11F3CDF1924CB920071108B /* TwitterAccount.h */,
+				D11F3CE01924CB920071108B /* TwitterAccount.m */,
+				D11F3CE21924CBAD0071108B /* TwitterTimeline.h */,
+				D11F3CE31924CBAD0071108B /* TwitterTimeline.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D19B51C81926115D00D0CDA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D19B51CF1926115D00D0CDA3 /* libSDWebImage.a */,
+				D19B51D11926115D00D0CDA3 /* libSDWebImage+WebP.a */,
+				D19B51D31926115D00D0CDA3 /* libSDWebImage+MKAnnotation.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A06BE40519234DBD004AF81D /* StudySocialApp-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A06BE43819234DBD004AF81D /* Build configuration list for PBXNativeTarget "StudySocialApp-iOS" */;
+			buildPhases = (
+				A06BE40219234DBD004AF81D /* Sources */,
+				A06BE40319234DBD004AF81D /* Frameworks */,
+				A06BE40419234DBD004AF81D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "StudySocialApp-iOS";
+			productName = "StudySocialApp-iOS";
+			productReference = A06BE40619234DBD004AF81D /* StudySocialApp-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A06BE42619234DBD004AF81D /* StudySocialApp-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A06BE43B19234DBD004AF81D /* Build configuration list for PBXNativeTarget "StudySocialApp-iOSTests" */;
+			buildPhases = (
+				A06BE42319234DBD004AF81D /* Sources */,
+				A06BE42419234DBD004AF81D /* Frameworks */,
+				A06BE42519234DBD004AF81D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A06BE42D19234DBD004AF81D /* PBXTargetDependency */,
+			);
+			name = "StudySocialApp-iOSTests";
+			productName = "StudySocialApp-iOSTests";
+			productReference = A06BE42719234DBD004AF81D /* StudySocialApp-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A06BE3FE19234DBD004AF81D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Huchcode;
+				TargetAttributes = {
+					A06BE42619234DBD004AF81D = {
+						TestTargetID = A06BE40519234DBD004AF81D;
+					};
+				};
+			};
+			buildConfigurationList = A06BE40119234DBD004AF81D /* Build configuration list for PBXProject "StudySocialApp-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A06BE3FD19234DBD004AF81D;
+			productRefGroup = A06BE40719234DBD004AF81D /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D19B51C81926115D00D0CDA3 /* Products */;
+					ProjectRef = D19B51C71926115D00D0CDA3 /* SDWebImage.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				A06BE40519234DBD004AF81D /* StudySocialApp-iOS */,
+				A06BE42619234DBD004AF81D /* StudySocialApp-iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D19B51CF1926115D00D0CDA3 /* libSDWebImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSDWebImage.a;
+			remoteRef = D19B51CE1926115D00D0CDA3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D19B51D11926115D00D0CDA3 /* libSDWebImage+WebP.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libSDWebImage+WebP.a";
+			remoteRef = D19B51D01926115D00D0CDA3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D19B51D31926115D00D0CDA3 /* libSDWebImage+MKAnnotation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libSDWebImage+MKAnnotation.a";
+			remoteRef = D19B51D21926115D00D0CDA3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A06BE40419234DBD004AF81D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1364DD319260919002FA001 /* settings.png in Resources */,
+				A06BE42219234DBD004AF81D /* Images.xcassets in Resources */,
+				D1364DD219260919002FA001 /* feed.png in Resources */,
+				A06BE41419234DBD004AF81D /* InfoPlist.strings in Resources */,
+				A06BE41D19234DBD004AF81D /* Main.storyboard in Resources */,
+				D1364DD119260919002FA001 /* add.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A06BE42519234DBD004AF81D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A06BE43319234DBD004AF81D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A06BE40219234DBD004AF81D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D11F3CE11924CB920071108B /* TwitterAccount.m in Sources */,
+				D1364DCC192608E4002FA001 /* MainViewController.m in Sources */,
+				A06BE41A19234DBD004AF81D /* AppDelegate.m in Sources */,
+				A06BE41619234DBD004AF81D /* main.m in Sources */,
+				D1364DCB192608E4002FA001 /* FeedsViewController.m in Sources */,
+				D11F3CE41924CBAD0071108B /* TwitterTimeline.m in Sources */,
+				D1364DCD192608E4002FA001 /* SettingsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A06BE42319234DBD004AF81D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A06BE43519234DBD004AF81D /* StudySocialApp_iOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A06BE42D19234DBD004AF81D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A06BE40519234DBD004AF81D /* StudySocialApp-iOS */;
+			targetProxy = A06BE42C19234DBD004AF81D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A06BE41219234DBD004AF81D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A06BE41319234DBD004AF81D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A06BE41B19234DBD004AF81D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A06BE41C19234DBD004AF81D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A06BE43119234DBD004AF81D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A06BE43219234DBD004AF81D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A06BE43619234DBD004AF81D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A06BE43719234DBD004AF81D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A06BE43919234DBD004AF81D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StudySocialApp-iOS/StudySocialApp-iOS-Prefix.pch";
+				INFOPLIST_FILE = "StudySocialApp-iOS/StudySocialApp-iOS-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A06BE43A19234DBD004AF81D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StudySocialApp-iOS/StudySocialApp-iOS-Prefix.pch";
+				INFOPLIST_FILE = "StudySocialApp-iOS/StudySocialApp-iOS-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A06BE43C19234DBD004AF81D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StudySocialApp-iOS.app/StudySocialApp-iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StudySocialApp-iOS/StudySocialApp-iOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "StudySocialApp-iOSTests/StudySocialApp-iOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A06BE43D19234DBD004AF81D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StudySocialApp-iOS.app/StudySocialApp-iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StudySocialApp-iOS/StudySocialApp-iOS-Prefix.pch";
+				INFOPLIST_FILE = "StudySocialApp-iOSTests/StudySocialApp-iOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A06BE40119234DBD004AF81D /* Build configuration list for PBXProject "StudySocialApp-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A06BE43619234DBD004AF81D /* Debug */,
+				A06BE43719234DBD004AF81D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A06BE43819234DBD004AF81D /* Build configuration list for PBXNativeTarget "StudySocialApp-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A06BE43919234DBD004AF81D /* Debug */,
+				A06BE43A19234DBD004AF81D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A06BE43B19234DBD004AF81D /* Build configuration list for PBXNativeTarget "StudySocialApp-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A06BE43C19234DBD004AF81D /* Debug */,
+				A06BE43D19234DBD004AF81D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A06BE3FE19234DBD004AF81D /* Project object */;
+}
