@@ -7,6 +7,7 @@
 //
 
 #import "TwitterTimeline.h"
+#import "TwitterTableCell.h"
 
 @interface TwitterTimeline ()
 
@@ -27,6 +28,8 @@
 {
     [super viewDidLoad];
     [self getTimeLine];
+
+    self.tableView.delegate = self;
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -81,8 +84,8 @@
                          }
                      }];
                  } else if ([arrayOfAccounts count] == 0) {
-                     SLComposeViewController *tweetSheet = [[SLComposeViewController alloc]init];
-                     tweetSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+//                     SLComposeViewController *tweetSheet = [[SLComposeViewController alloc]init];
+                     SLComposeViewController *tweetSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
                      tweetSheet.view.hidden = YES;
                      [self presentViewController:tweetSheet animated:NO completion:^{[tweetSheet.view endEditing:YES];}];
                  }
@@ -97,7 +100,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 75;
+    return 80;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -109,27 +112,51 @@
 {
     static NSString *CellIdentifier = @"TweetCell";
     
-    UITableViewCell *cell = [self.twitterTimeline dequeueReusableCellWithIdentifier:CellIdentifier];
+//    UITableViewCell *cell = [self.twitterTimeline dequeueReusableCellWithIdentifier:CellIdentifier];
+    TwitterTableCell *cell = (TwitterTableCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+
     
-    if (cell == nil)
-    {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
+//    if (cell == nil)
+//    {
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+//    }
     
     NSDictionary *tweet = _dataSource[[indexPath row]];
-    
-    cell.textLabel.numberOfLines = 6;
-    cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
-    cell.textLabel.font = [UIFont systemFontOfSize:10];
-    cell.textLabel.textColor = [UIColor whiteColor];
-    cell.textLabel.text = tweet[@"text"];
 
+    cell.tweetUsername.font = [UIFont systemFontOfSize:8.0];
+    cell.tweetText.numberOfLines = 6;
+    cell.tweetText.lineBreakMode = NSLineBreakByWordWrapping;
+    cell.tweetText.font = [UIFont systemFontOfSize:10.0];
+    cell.tweetText.textColor = [UIColor whiteColor];
     NSString *profImageURL = tweet[@"user"][@"profile_image_url"];
     NSData *profImageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:profImageURL]];
-    cell.imageView.image = [UIImage imageWithData:profImageData];
+    UIImageView *profilePicView = [[UIImageView alloc] initWithImage:[UIImage imageWithData:profImageData]];
+    profilePicView.layer.borderColor = [UIColor blackColor].CGColor;
+    profilePicView.layer.borderWidth = 1;
+    
+    [cell.tweetProfilePic addSubview:profilePicView];
+    cell.tweetUsername.text = tweet[@"user"][@"name"];
+    cell.tweetText.text = tweet[@"text"];
+
+//    cell.textLabel.numberOfLines = 6;
+//    cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
+//    cell.textLabel.font = [UIFont systemFontOfSize:10];
+//    cell.textLabel.textColor = [UIColor whiteColor];
+//    cell.textLabel.text = tweet[@"text"];
+//
+//    NSString *profImageURL = tweet[@"user"][@"profile_image_url"];
+//    NSData *profImageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:profImageURL]];
+//    cell.imageView.image = [UIImage imageWithData:profImageData];
     
     //    cell.textLabel.text = [NSString stringWithFormat:@"%@ - %@", tweet[@"id"], tweet[@"text"]];
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    TwitterDetail *tweetDetailVC = [self.storyboard instantiateViewControllerWithIdentifier:@"TwitterDetail"];
+    tweetDetailVC.tweetDetail = [self.dataSource objectAtIndex:indexPath.row];
+    [self.navigationController pushViewController:tweetDetailVC animated:YES];
 }
 
 /*

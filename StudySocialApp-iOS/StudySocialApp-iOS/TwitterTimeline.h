@@ -10,6 +10,8 @@
 #import <Social/Social.h>
 #import <Accounts/Accounts.h>
 
+#import "TwitterDetail.h"
+
 @interface TwitterTimeline : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *twitterTimeline;
