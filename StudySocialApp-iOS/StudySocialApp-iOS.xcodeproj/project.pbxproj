@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		93B6A5921929B14600A77A88 /* FacebookAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B6A5911929B14600A77A88 /* FacebookAccount.m */; };
-		93B6A5981929C14B00A77A88 /* FacebookTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B6A5971929C14B00A77A88 /* FacebookTimeline.m */; };
 		A06BE40A19234DBD004AF81D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06BE40919234DBD004AF81D /* Foundation.framework */; };
 		A06BE40C19234DBD004AF81D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06BE40B19234DBD004AF81D /* CoreGraphics.framework */; };
 		A06BE40E19234DBD004AF81D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A06BE40D19234DBD004AF81D /* UIKit.framework */; };
@@ -62,10 +60,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		93B6A5901929B0DA00A77A88 /* FacebookAccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FacebookAccount.h; sourceTree = "<group>"; };
-		93B6A5911929B14600A77A88 /* FacebookAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookAccount.m; sourceTree = "<group>"; };
-		93B6A5961929C14B00A77A88 /* FacebookTimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookTimeline.h; sourceTree = "<group>"; };
-		93B6A5971929C14B00A77A88 /* FacebookTimeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookTimeline.m; sourceTree = "<group>"; };
 		A06BE40619234DBD004AF81D /* StudySocialApp-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StudySocialApp-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A06BE40919234DBD004AF81D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A06BE40B19234DBD004AF81D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -161,6 +155,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93F647FF192CAED800EE621B /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Facebook;
+			sourceTree = "<group>";
+		};
 		A06BE3FD19234DBD004AF81D = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +199,7 @@
 		A06BE40F19234DBD004AF81D /* StudySocialApp-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				93F647FF192CAED800EE621B /* Facebook */,
 				A06BE41819234DBD004AF81D /* AppDelegate.h */,
 				A06BE41919234DBD004AF81D /* AppDelegate.m */,
 				A06BE41B19234DBD004AF81D /* Main.storyboard */,
@@ -257,10 +259,6 @@
 				D1E383B0192B4FB2001E7A5F /* TwitterTableCell.m */,
 				D1E383AC192B4E1A001E7A5F /* TwitterDetail.h */,
 				D1E383AD192B4E1A001E7A5F /* TwitterDetail.m */,
-				93B6A5901929B0DA00A77A88 /* FacebookAccount.h */,
-				93B6A5911929B14600A77A88 /* FacebookAccount.m */,
-				93B6A5961929C14B00A77A88 /* FacebookTimeline.h */,
-				93B6A5971929C14B00A77A88 /* FacebookTimeline.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -406,7 +404,6 @@
 				D1E383A4192B4D51001E7A5F /* SDWebImageDownloaderOperation.m in Sources */,
 				D1E383A5192B4D51001E7A5F /* SDWebImageManager.m in Sources */,
 				D1364DCC192608E4002FA001 /* MainViewController.m in Sources */,
-				93B6A5981929C14B00A77A88 /* FacebookTimeline.m in Sources */,
 				D1E383A3192B4D51001E7A5F /* SDWebImageDownloader.m in Sources */,
 				D1E3839E192B4D51001E7A5F /* MKAnnotationView+WebCache.m in Sources */,
 				D1E383AE192B4E1A001E7A5F /* TwitterDetail.m in Sources */,
@@ -414,7 +411,6 @@
 				D1E383A6192B4D51001E7A5F /* SDWebImagePrefetcher.m in Sources */,
 				D1E383A9192B4D51001E7A5F /* UIImage+MultiFormat.m in Sources */,
 				A06BE41A19234DBD004AF81D /* AppDelegate.m in Sources */,
-				93B6A5921929B14600A77A88 /* FacebookAccount.m in Sources */,
 				D1E383A7192B4D51001E7A5F /* UIButton+WebCache.m in Sources */,
 				A06BE41619234DBD004AF81D /* main.m in Sources */,
 				D1E383A0192B4D51001E7A5F /* SDImageCache.m in Sources */,
