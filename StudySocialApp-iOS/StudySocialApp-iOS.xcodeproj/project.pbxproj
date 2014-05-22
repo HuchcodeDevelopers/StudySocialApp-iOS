@@ -211,6 +211,7 @@
 		A06BE40F19234DBD004AF81D /* StudySocialApp-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				A6AA726F192D97DF005DB31F /* GooglePlus */,
 				93F647FF192CAED800EE621B /* Facebook */,
 				A06BE41819234DBD004AF81D /* AppDelegate.h */,
 				A06BE41919234DBD004AF81D /* AppDelegate.m */,
@@ -260,6 +261,13 @@
 				A06BE43119234DBD004AF81D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A6AA726F192D97DF005DB31F /* GooglePlus */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = GooglePlus;
 			sourceTree = "<group>";
 		};
 		D11F3CDE1924CAE50071108B /* Models */ = {
